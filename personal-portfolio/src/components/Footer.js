@@ -16,14 +16,43 @@ export const Footer = () => {
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="#"><img src={navIcon1} alt="Icon" /></a>
-              <a href="#"><img src={navIcon2} alt="Icon" /></a>
-              <a href="#"><img src={navIcon3} alt="Icon" /></a>
+              <a
+                href="www.linkedin.com"
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => {
+                  window.open(
+                    "https://www.linkedin.com/in/tshepo-mashiloane-937b17254/"
+                  );
+                }}
+              >
+                <img src={navIcon1} alt="" />
+              </a>
+              <a
+                href={"www.twitter.com/lifeoftshepo"}
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => {
+                  window.open("https://www.twitter.com/lifeoftshepo");
+                }}
+              >
+                <img src={navIcon2} alt="" />
+              </a>
+              <a
+                href="www.github.com/tshepoandi"
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => {
+                  window.open("https://www.github.com/tshepoandi");
+                }}
+              >
+                <img src={navIcon3} alt="" />
+              </a>
             </div>
             <p>Copyright 2022. All Rights Reserved</p>
           </Col>
         </Row>
       </Container>
     </footer>
-  )
-}
+  );
+};

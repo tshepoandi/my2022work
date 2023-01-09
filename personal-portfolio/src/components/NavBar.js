@@ -73,13 +73,36 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="www.linkedin.com">
+                <a
+                  href="www.linkedin.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={() => {
+                    window.open(
+                      "https://www.linkedin.com/in/tshepo-mashiloane-937b17254/"
+                    );
+                  }}
+                >
                   <img src={navIcon1} alt="" />
                 </a>
-                <a href="www.twitter.com/lifeoftshepo">
+                <a
+                  href={"www.twitter.com/lifeoftshepo"}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={() => {
+                    window.open("https://www.twitter.com/lifeoftshepo");
+                  }}
+                >
                   <img src={navIcon2} alt="" />
                 </a>
-                <a href="www.github.com/tshepoandi">
+                <a
+                  href="www.github.com/tshepoandi"
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={() => {
+                    window.open("https://www.github.com/tshepoandi");
+                  }}
+                >
                   <img src={navIcon3} alt="" />
                 </a>
               </div>
